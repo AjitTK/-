@@ -1,7 +1,162 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII Name</title>
+	 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+	    body {
+            font-family: 'JetBrains Mono', monospace;
+            margin: 0;
+            padding: 20px;
+            #background-color: #f4f4f4;
+			background-color: #2b2b2b;
+        }
+		
+		.container {
+            display: flex; /* Arrange divs side by side */
+            gap: 10px; /* Add space between divs */
+            justify-content: left; /* Center align the divs */
+        }
+		
+		.boxP {
+            flex: 1; /* Equal width for all divs */
+            max-width: 100%; /* Optional: Set max width for each div */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #2b2b2b;
+            color: #a9b7c6;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: auto; /* Enable scroll for long content */
+        }
+		.box {
+            flex: 1; /* Equal width for all divs */
+            max-width: 33%; /* Optional: Set max width for each div */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #2b2b2b;
+            color: #a9b7c6;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: auto; /* Enable scroll for long content */
+        }
+		
+        pre {
+            font-family: 'JetBrains Mono', monospace; /* IntelliJ-style font */
+            background-color: #2b2b2b; /* IntelliJ dark theme background */
+            color: #a9b7c6; /* IntelliJ light gray text */
+            padding: 10px; /* Add some padding */
+            border-radius: 5px; /* Rounded corners */
+            overflow: auto; /* Add scroll for long content */
+            font-size: 14px; /* Default IntelliJ font size */
+            line-height: 1.5; /* Better readability */
+        }
+		
+		.social-icons {
+            display: flex; /* Arrange icons in a row */
+            gap: 20px; /* Add spacing between icons */
+        }
+
+        .social-icons a {
+            text-decoration: none; /* Remove underline */
+            display: inline-block;
+            background-color: #333; /* Dark background for each icon */
+            border-radius: 50%; /* Round shape */
+            padding: 10px; /* Add padding inside icons */
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .social-icons a:hover {
+            background-color: #555; /* Lighter background on hover */
+            transform: scale(1.2); /* Slight zoom on hover */
+        }
+
+        .social-icons img {
+            width: 20px; /* Icon size */
+            height: 20px;
+            filter: invert(1); /* Invert colors for a light version on dark background */
+            transition: transform 0.3s; /* Smooth hover effect */
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1); /* Slight zoom on hover */
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<div class="container">
+<pre>
+/**
+ *  +-+-+-+-+ +-+-+-+-+-+-+
+ *  |   AJIT KAMBLE       |         
+ *  +-+-+-+-+ +-+-+-+-+-+-+
+ */
+</pre>
+</div>
+ <div class="container">
+ <div class="boxP">
+ <pre>
+   def intro:String = {   
+	 "Big Data Enthusiast | Java & Scala Expert | Problem Solver | Chess, Puzzles, and Auto Aficionado" 
+   }
+ </pre>
+ <div class="social-icons">
+		<a href="https://www.linkedin.com/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png" alt="GitHub">
+        </a>
+ </div>
+ </div>
+ </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ <div class="container">
+<div class="box">
+            <pre>
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+
+console.log(greet("World"));
+            </pre>
+        </div>
+<div class="box">
+	<pre>
+def greet(name):
+print(f"Hello, {name}!")
+
+greet("World")
+	</pre>
+</div>
+<div class="box">
+	<pre>
+#include <iostream>
+using namespace std;
+
+int main() {
+cout << "Hello, World!" << endl;
+return 0;
+}
+	</pre>
+</div>
+</div>
+</div>
+</div>
 </body>
 </html>
