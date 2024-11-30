@@ -43,12 +43,14 @@
             overflow: auto; /* Enable scroll for long content */
         }
 		
+	
+		
         pre {
             font-family: 'JetBrains Mono', monospace; /* IntelliJ-style font */
             background-color: #2b2b2b; /* IntelliJ dark theme background */
             color: #a9b7c6; /* IntelliJ light gray text */
             padding: 10px; /* Add some padding */
-            border-radius: 5px; /* Rounded corners */
+            border-radius: 1px; /* Rounded corners */
             overflow: auto; /* Add scroll for long content */
             font-size: 14px; /* Default IntelliJ font size */
             line-height: 1.5; /* Better readability */
@@ -56,12 +58,18 @@
 		
 		.social-icons {
             display: flex; /* Arrange icons in a row */
-            gap: 20px; /* Add spacing between icons */
+            gap: 10px; /* Add spacing between icons */
+			margin-left:200px;
+        }
+		
+		.social-icons span{
+			margin-top: 100px;
         }
 
         .social-icons a {
             text-decoration: none; /* Remove underline */
             display: inline-block;
+			height:30px;
             background-color: #333; /* Dark background for each icon */
             border-radius: 50%; /* Round shape */
             padding: 10px; /* Add padding inside icons */
@@ -70,59 +78,80 @@
 
         .social-icons a:hover {
             background-color: #555; /* Lighter background on hover */
-            transform: scale(1.2); /* Slight zoom on hover */
         }
 
         .social-icons img {
-            width: 20px; /* Icon size */
-            height: 20px;
+            width: 30px; /* Icon size */
+            height: 30px;
+			justify-content: center; 
+			align-items: center; /* Center image vertically */
             filter: invert(1); /* Invert colors for a light version on dark background */
             transition: transform 0.3s; /* Smooth hover effect */
         }
-
-        .social-icons img:hover {
-            transform: scale(1.1); /* Slight zoom on hover */
-        }
+		
+		.img-a {
+		 padding:5px;
+		 width:10px;
+		 height:10px;
+		 margin-top:10px;
+		}
+		
+		
     </style>
 </head>
 <body>
 
-<div class="container">
-<pre>
-/**
- *  +-+-+-+-+ +-+-+-+-+-+-+
- *  |   AJIT KAMBLE       |         
- *  +-+-+-+-+ +-+-+-+-+-+-+
- */
-</pre>
-</div>
  <div class="container">
  <div class="boxP">
  <pre>
-   def intro:String = {   
-	 "Big Data Enthusiast | Java & Scala Expert | Problem Solver | Chess, Puzzles, and Auto Aficionado" 
-   }
- </pre>
- <div class="social-icons">
-		<a href="https://www.linkedin.com/" target="_blank">
+  
+  /**
+   *  +-+-+-+-+ +-+-+-+-+-+-+
+   *  |   AJIT KAMBLE       |         
+   *  +-+-+-+-+ +-+-+-+-+-+-+
+   *   
+   */
+    
+   {
+	 "Summary" : "Big Data Enthusiast | Java & Scala Expert | Problem Solver | Chess, Puzzles, and Auto Aficionado",
+	 "Connect" : [	
+</pre>
+ <span class="social-icons">
+        <a href="https://www.linkedin.com/" target="_blank">
             <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
         </a>
-
-        <!-- Instagram -->
         <a href="https://www.instagram.com/" target="_blank">
             <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
         </a>
-
-        <!-- GitHub -->
         <a href="https://github.com/" target="_blank">
             <img src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png" alt="GitHub">
         </a>
+    </span>
+	
+	 <pre>                     ],
+	 
+	  "Project": [ 
+	     
+		 
+	  
+	  ],
+	  "Certificate": [ 
+	     
+		 
+	  
+	  ],
+	  "Hobbies": [ 
+	     
+		 
+	  
+	  ]
+	  
+   }
+	 </pre>
+ <hr></hr>
  </div>
  </div>
- </div>
- 
- 
- 
+
  
  
  
